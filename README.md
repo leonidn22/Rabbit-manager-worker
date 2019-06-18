@@ -1,6 +1,6 @@
 # Rabbit-manager-worker
 
-This is the excercise to create:
+This is the exercise to create:
 1. manager reads continuosly file of sql inserts and puts it into RabbitMQ queue
 2. worker recieves messages from RabbitMQ and executes SQL's in MySQL DB
 
