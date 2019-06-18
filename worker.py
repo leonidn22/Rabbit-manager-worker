@@ -8,9 +8,8 @@ from helper_functions import *
 
 
 """
-    RabbitMQ Worker read from SQL's from queue and perform it in MySQL
+    RabbitMQ Worker read from SQL's from queue and executes it in MySQL DB
     
-    To purge queue: sudo rabbitmqctl purge_queue task_queue
 """
 
 log, log_exc = init_log('worker.log',log_to_screen_err=False)
