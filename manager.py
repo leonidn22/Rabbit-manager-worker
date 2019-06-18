@@ -9,8 +9,8 @@ from helper_functions import *
 
 
 """
-    RabbitMQ Manager read asynchronously using asyncio library file of SQL's
-    And put each sql as a task in MQ
+    RabbitMQ Manager reads asynchronously using asyncio library file of SQL's
+    And puts each sql as a task in MQ
 """
 
 log, log_exc = init_log('manager.log', log_to_screen_err=True)
