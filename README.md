@@ -8,7 +8,7 @@ The work done using Python3 asyncio library.
 It requires at minimum python3.5
 
 It's possible to run with ampersand “&” to fork manager and worker.
-In this case to stop the programs use "stop" as parameter like: python3.7 manager.py stop
+In this case to stop the programs use "stop" as parameter like: <code>python3.7 manager.py stop</code>
 
 .....
 Here is usage of the programs:
