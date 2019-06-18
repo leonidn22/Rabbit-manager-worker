@@ -12,7 +12,7 @@ In this case to stop the programs use "stop" as parameter like: python3.7 manage
 
 .....
 Here is usage of the programs:
-
+<pre>
 usage: manager.py [-h] [-f FILE] [-host HOST_NAME] [-p PORT] [--version]
 
 optional arguments:
@@ -50,3 +50,4 @@ optional arguments:
   -sqlpass SQL_PASSWORD, --sql_password SQL_PASSWORD
                         MySQL Password (default: leopass)
   --version, -v         Print version info and exit (default: False)
+</pre>
