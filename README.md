@@ -64,7 +64,7 @@ Sent 42 messages - waiting
 -------------------------------------------------------
 
 [ec2-user@ip-172-31-33-247 leo]$ python3.7 worker.py 
-Namespace(chunks_2_report=10, file='tasks_test.txt', host_name='localhost', max_errors=5, port='5672
+Namespace(chunks_2_report=10, file='tasks_test.txt', host_name='localhost', <b>max_errors=5</b>, port='5672
 loop True
   Received total message_count=0; total error sql messages=0 
   Received total message_count=10; total error sql messages=0 
@@ -76,6 +76,6 @@ loop True
   Received total message_count=70; total error sql messages=3 
   Received total message_count=80; total error sql messages=3 
   Received total message_count=90; total error sql messages=4 
-------------------- Reached the Max Errors - EXIT ---------------------
+------------------- <b>Reached the Max Errors - EXIT</b> ---------------------
 </pre>
 
