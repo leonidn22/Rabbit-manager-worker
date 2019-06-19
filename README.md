@@ -51,3 +51,31 @@ optional arguments:
                         MySQL Password (default: leopass)
   --version, -v         Print version info and exit (default: False)
 </pre>
+
+And the output looks like:
+<pre>
+[ec2-user@ip-172-31-33-247 leo]$ python3.7 manager.py -f task_errors.txt 
+---------------- Manager Started ----------------
+only PLAIN login_method is supported, falling back to AMQPLAIN
+Recv open ok
+Sent 42 messages - waiting
+^CClosing
+
+-------------------------------------------------------
+
+[ec2-user@ip-172-31-33-247 leo]$ python3.7 worker.py 
+Namespace(chunks_2_report=10, file='tasks_test.txt', host_name='localhost', max_errors=5, port='5672
+loop True
+  Received total message_count=0; total error sql messages=0 
+  Received total message_count=10; total error sql messages=0 
+  Received total message_count=20; total error sql messages=0 
+  Received total message_count=30; total error sql messages=1 
+  Received total message_count=40; total error sql messages=1 
+  Received total message_count=50; total error sql messages=1 
+  Received total message_count=60; total error sql messages=2 
+  Received total message_count=70; total error sql messages=3 
+  Received total message_count=80; total error sql messages=3 
+  Received total message_count=90; total error sql messages=4 
+------------------- Reached the Max Errors - EXIT ---------------------
+</pre>
+
